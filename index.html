@@ -7,9 +7,13 @@
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/farray" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/mobile-v.css">
+    <link rel="stylesheet" href="/assets/css/tablet-v.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="light-theme body">
     <header id="header" class="header">
@@ -18,124 +22,119 @@
                 <img src="./assets/images/horizontal_on_corporate_2000x899px_by_zenbusiness.png" alt="company-logo" class="logo">
             </a>
 
-            <div class="action-bar">
-               
-               <button id="menu" class="menu-btn">
-                <span class="first"></span>
-                <span class="second"></span>
-                <span class="third"></span>
-            </button>
-
-                <button class="theme-btn">
-                    <span class="status-indicator"></span>
-                </button>
-            </div>
-
-            
-
-
             <nav id="nav" class="nav">
                 <ul class="nav-ul">
-                    <li class="nav-li"><a href="#about-us" class="nav-li-a">About Us</a></li>
-                    <li class="nav-li"><a href="#contact-us" class="nav-li-a">Contact Us</a></li>
+                    <li class="nav-li"><a href="#" class="nav-li-a">Home</a></li>
+                    <li class="nav-li"><a href="#about" class="nav-li-a">About</a></li>
+                    <li class="nav-li"><a href="#services" class="nav-li-a">Services</a></li>
+                    <li class="nav-li"><a href="#contact" class="nav-li-a">Contact</a></li>             
                 </ul>
+                
 
                 <ul class="info-nav-ul">
                     <li class="info-nav-li"><a href="tel:+16124505410" class="info-nav-li-a">6124505410</a></li>
-                    <li class="info-nav-li"><a href="mailto:mjalloh@thetwomigrations.com" class="info-nav-li-a">mjalloh@thetwomigrations.com</a></li>
+                    <li class="info-nav-li"><a href="mailto:m.jalloh@thetwomigrations.com" class="info-nav-li-a">m.jalloh@thetwomigrations.com</a></li>
                 </ul>
             </nav>
         </div>
+
+        <div class="action-bar">
+               
+            <button id="menu" class="menu-btn">
+             <span class="first"></span>
+             <span class="second"></span>
+             <span class="third"></span>
+         </button>
+
+             <button class="theme-btn">
+                 <span class="status-indicator"></span>
+             </button>
+         </div>
+
         
     </header>
    <main id="main" class="main">
     <section id="hero" class="hero">
         <article class="hero-container">
-            <h2 class="hero-greeting">
-                Welcome to The Two Migrations LLC <br>
-                Homepage
-            </h2>
-            <p class="hero-slogan">
-                where - one you migrate, you'll never wanna go back!
+            <section class="textBox">
+                        <h2 class="hero-greeting">
+                            Welcome to <br> 
+                            The Two Migrations LLC <br>
+                            Homepage
+                        </h2>
+                        <p class="hero-slogan">
+                            "Once you migrate, you'll never wanna go back!"
+                        </p>
+                        <a href="#" class="viewServices">View Services</a>
+            </section>
+            <section class="imgBox">
+                <img src="./assets/images/linkedin_standard_logo_by_zenbusiness.png" alt="" class="imgOfBox">
+            </section>
+            <section class="socials">
+                <ul class="social-nav-ul">
+                    <li class="social-nav-li"><a href="" class="social-nav-li-a"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-nav-li"><a href="" class="social-nav-li-a"><ion-icon name="mail-outline"></ion-icon></a></li>
+                </ul>
+            </section>
+        </article>
+       
+    </section>
+
+    <section id="about" class="about">
+        <article class="about-container">
+            <h4 class="section-title">
+                About Us
+            </h4>
+            <p class="section-text">
+                The Two Migrations was founded to provide excellent services in primarily Software Development, but as the founder expanded his ventures, he thought that he will combine his love for Software Development and his other talents and skills to help find solutions that will help bridge the gaps between clients and businesses.
             </p>
-            <section class="contact-about-container">
-                
-                   <a href="#contact-us" class="contact-link"><button class="contact-us-btn">Contact Us</button></a> 
-                
-               <a href="#about-us" class="about-us-link"><button class="about-us-btn">
-                    About Us
-                </button></a> 
-            </section>
-        </article>
-    </section>
-    <section id="about-us" class="about-us">
-        <article class="about-us-container">
-            <section class="about-logo">
-                <img src="/assets/images/man-talk.png" alt="man-talk" class="about-me-logo">
-            </section>
-            <section class="about-container">
-                <h1 class="about-title">About Us</h1>
-                <p class="about-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae cum saepe aliquid perferendis est cupiditate, soluta perspiciatis, voluptas sed distinctio assumenda vitae. Facere maxime repudiandae debitis quod! Voluptates, quibusdam voluptatibus!
-                </p>
-            </section>
         </article>
     </section>
 
-    <section id="contact-us" class="contact-us">
-        <h1>Let's Talk!</h1>
-        <article class="contact-us-subcontainer">
-            <section class="contact-info-container">
-                <article class="business-hours-container">
-                    <h4 class="business-hours-title"></h4>
-                    <section class="business-times">
-                        <article class="days">
-                            <p>Mon - Fri</p>
-                            <p>Sat - Sun</p>
-                        </article>
-                        <article class="times">
-                            <p>7:00 am - 5:00 pm</p>
-                            <p>Closed</p>
-                        </article>
-                    </section>
-                    <section class="business-info">
-                        <address>
-                            839 University Ave W
-                            Saint Paul, MN 55104-4808, US
-                        </address>
-                        <a href="tel:+6124505410">+1 612-450-5410</a>
-                        <a href="mailto:m.jalloh@thetwomigrations.com">m.jalloh@thetwomigrations.com</a>
-                    </section>
-                    <section class="social-links">
 
-                    </section>
-                </article>
-            </section>
-            <section class="contact-info-form">
-                <form action="">
-                    <label for="name">Name</label>
-                    <br>
-                    <input type="text" name="name" id="name">
-                    <br>
-                    <label for="email">Email</label>
-                    <br>
-                    <input type="email" name="email" id="email">
-                    <br>
-                    <label for="phone">Phone</label>
-                    <br>
-                    <input type="tel" name="phone" id="phone">
-                    <br>
-                    <label for="message">Message</label>
-                    <br>
-                    <textarea name="message" id="message" cols="50" rows="5">
-
-                    </textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
+    <section id="services" class="services">
+        <article class="services-container">
+            <h4 class="section-title">Services</h4>
+            <ul class="services-ul">
+                <li class="services-li">Software Development</li>
+                <li class="services-li">Distribution / Delivery</li>
+                <li class="services-li">Coming Soon..</li>
+                <li class="services-li">Coming Soon..</li>
+            </ul>
         </article>
     </section>
-   </main>
+
+    <section class="contact" id="contact">
+        <article class="contact-container">
+            <h4 class="section-title">
+                Contact Us:
+            </h4>
+            <ul class="contact-ul">
+                <li class="phone-container contact-li">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <a href="tel:+6124505410">6124505410</a>
+                            </li>
+                            <li class="email-container contact-li">
+                                <ion-icon name="send-outline"></ion-icon>
+                                <a href="mailto:m.jalloh@thetwomigrations.com">m.jalloh@thetwomigrations.com</a>
+                            </li>
+                            <li class="address-container contact-li">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address>
+                                    Saint Paul, MN 55104
+                                </address>
+                            </li>
+            </ul>
+            
+        </article>
+    </section>
+
+       </main>
+ <footer id="footer" class="footer">
+    <section class="container-footer">
+            <p class="copyright">&#169 | 2024</p>
+      </section>
+   </footer>
     <script src="/assets/js/scripts.js"></script>
 </body>
 </html>
