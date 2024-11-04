@@ -104,8 +104,6 @@ button {
     align-items: center;
     margin: auto;
     padding:5px 10px;
-
-    background: var(--bg-primary);
 }
 
 .header-container.active {
@@ -118,6 +116,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  z-index: 3;
 }
 
 
@@ -215,9 +214,8 @@ color: var(--color-primary);
     border: 0;
   }
 
-  .header-container.active .theme-btn {
-    background: var(--bg-primary);
-  }
+
+
   
   .status-indicator {
     position: relative;
@@ -245,6 +243,15 @@ color: var(--color-primary);
 }
 
 
+
+section:is(.hero, .about, .services, .contact) {
+  min-height: 90vh;
+  padding: 20px 0;
+  margin: 10px 0 5px;
+}
+
+
+
 /* Main */
 
 
@@ -262,7 +269,7 @@ color: var(--color-primary);
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   margin: auto;
   padding: 50px 2px;
 }
@@ -273,23 +280,31 @@ color: var(--color-primary);
   display: flex;
   justify-content: space-between;
   width: 100%;
+  min-height: 90vh;
   align-items: center;
-  /* padding-right: 70px; */
+  padding-right: 70px;
+  margin: auto;
 }
 
 .hero-container .textBox {
   position: relative;
   max-width: 600px;
+  
+
 }
 
 
 
 .imgOfBox {
-  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(200px, 100%, 400px);
+  margin: auto;
 }
 .hero-greeting {
   color: var(--color-primary);
-  font-size: 4em;
+  font-size: clamp(1.5rem, 8.5vw, 3rem); 
   line-height: 1.5em;
   font-weight: 900;
 }
@@ -308,6 +323,9 @@ color: var(--color-primary);
 }
 
 .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   position: relative;
   /* left: 77%;
   top: 50vh; */
@@ -339,7 +357,7 @@ ion-icon:hover {
 }
 
 .section-title {
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 8.5vw, 4rem); 
   text-transform: uppercase;
 }
 
@@ -438,6 +456,8 @@ ion-icon:hover {
 
 
 .footer {
+  min-height: 1vh;
+  display: block;
   text-align: center;
 }
 

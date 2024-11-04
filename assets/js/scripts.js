@@ -18,6 +18,10 @@ window.addEventListener("scroll", function () {
 
 const menu = document.querySelector('.menu-btn')
 const navMenu = document.querySelector(".nav")
+const navList = document.querySelectorAll(".nav-li")
+const navLink = document.querySelectorAll(".nav-li-a")
+
+
 
 menu.addEventListener('click', function () {
     if(navMenu.style.display = "none") {
@@ -29,6 +33,19 @@ menu.addEventListener('click', function () {
          navMenu.style.display = "none"
     }
 })
+
+
+    navLink.forEach(item => {
+        item.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          menu.classList.remove('active');
+          themeBtn.classList.remove('active');
+        });
+      });
+
+
+
+
 
 
 
