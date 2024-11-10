@@ -10,9 +10,10 @@
   body {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: relative;
   }
     .header {
+      position: relative;
       width: 100%;
 
     }
@@ -25,9 +26,9 @@
       min-height: 100px;
     }
 
-    .header-container.active {
+    /* .header-container.active {
       position: fixed;
-      top: 0px;
+      top: 1px;
       background: var(--bg-secondary);
       box-shadow: var(--shadow-1);
       width: 100%;
@@ -37,14 +38,12 @@
       padding: 5px 8px;
       gap: 10px;
       z-index: 3;
-    } 
+    }  */
   
   
   .action-bar {
     display: flex;
-    position: relative;
-    left: 0;
-    top: 0;
+    position: static;
     justify-content: space-between;
     width: clamp(5rem, 100%, 10rem);
     transform: rotate(0deg);
