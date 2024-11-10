@@ -61,22 +61,24 @@ body.light-theme {
     padding: 0;
 }
 
-html,
-body {
+html {
     width: 100%;
-    min-height: 100vh;
-    scroll-behavior: smooth;
+    height: 100%;
+   
 }
 
 body {
+  position: relative;
+  height: 100%;
+  width: 100%;
     margin: auto;
-  display: flex;
-  flex-direction: column;
     font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
     background: var(--bg-primary);
     color: var(--color-primary);
+    scroll-behavior: smooth;
+    z-index: 0;
 }
 
 
@@ -91,25 +93,26 @@ button {
 
 
 .header {
-
+  position: relative;
   width: 100%;
   transition: var(--transition-1);
+  z-index: 3;
 }
 
 .header-container {
     display: flex;
     width: 100%;
-
+  position: relative;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     padding:5px 10px;
+    z-index: 3;
 }
 
 .header-container.active {
   position: fixed;
   top: 0px;
-  z-index: 3;
   background: var(--bg-secondary);
   box-shadow: var(--shadow-1);
   display: flex;
@@ -131,18 +134,18 @@ button {
 }
 
 .logo {
-  height: 70px;
+  width: clamp(4rem, 15vw, 20rem);
   position: relative;
-  min-width: 77px;
-  z-index: 2;
+  z-index: 3;
 }
 
 
 
-/* Nav */
+
 
 
 .nav {
+  position: relative;
   padding: 0 5px;
   order: 2;
   height: 100%;
@@ -168,28 +171,12 @@ button {
 }
 
 
-.cedars-btn {
-  border: 1px solid white;
-  margin: 0;
-  padding: 25px;
-font-size: larger;
-background: var(--bg-primary);
-color: var(--color-primary);
-  
-}
 
-.cedars-btn:active {
-  transform: scale(0.98);
-}
 
-.cedars-btn:hover {
-  background: crimson;
-  color: var(--color-primary);
-}
 
-/* Action Bar */
 
 .action-bar {
+  width: 15vw;
   position: fixed;
   bottom: 20px;
   left: 90vw;
@@ -197,12 +184,14 @@ color: var(--color-primary);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 5;
+    z-index: 3;
 }
 
 
 
-/* Theme */
+
+
+
   
 .theme-btn {
     padding: 4px;
@@ -211,7 +200,7 @@ color: var(--color-primary);
     border-radius: 100px;
     transition: var(--transition-1);
     display: block;
-    border: 0;
+    border: none;
   }
 
 
@@ -235,7 +224,10 @@ color: var(--color-primary);
     border: 1px solid var(--color-primary);
   }
 
-  /* Menu */
+
+
+
+
 
 
 #menu {
@@ -252,7 +244,7 @@ section:is(.hero, .about, .services, .contact) {
 
 
 
-/* Main */
+
 
 
 .main {
@@ -260,8 +252,10 @@ section:is(.hero, .about, .services, .contact) {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  max-width: 1400px;
   position: relative;
   padding: 100px;
+  z-index: 1;
 }
 
 .hero {
@@ -282,29 +276,34 @@ section:is(.hero, .about, .services, .contact) {
   width: 100%;
   min-height: 90vh;
   align-items: center;
-  padding-right: 70px;
   margin: auto;
 }
 
 .hero-container .textBox {
   position: relative;
-  max-width: 600px;
+  max-width: 100%;
   
 
 }
 
+.imgBox {
+  max-width: 40%;
+}
 
 
 .imgOfBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(200px, 100%, 400px);
+  width: clamp(100px, 100%, 200px);
   margin: auto;
 }
+
+
 .hero-greeting {
+  width: 100%;;
   color: var(--color-primary);
-  font-size: clamp(1.5rem, 8.5vw, 3rem); 
+  font-size: clamp(1.5rem, 8.5vw, 2.3rem); 
   line-height: 1.5em;
   font-weight: 900;
 }
@@ -325,15 +324,26 @@ section:is(.hero, .about, .services, .contact) {
 .socials {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
   /* left: 77%;
   top: 50vh; */
 }
 
+.social-nav-ul {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-nav-li {
+  padding: 20px 0;
+}
+
 ion-icon {
   background: var(--bg-primary);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   transition: 500ms;
 }
 
@@ -357,11 +367,13 @@ ion-icon:hover {
 }
 
 .section-title {
+  margin: auto;
   font-size: clamp(1.5rem, 8.5vw, 4rem); 
   text-transform: uppercase;
 }
 
 .section-text {
+  text-align: center;
   font-size: 1.4rem;
 }
 
