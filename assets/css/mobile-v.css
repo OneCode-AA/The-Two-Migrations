@@ -7,6 +7,7 @@
   
     .header {
       width: 100%;
+  
     }
   
     .header-container {
@@ -14,6 +15,7 @@
       position: relative;
       z-index: 2;
       transition: var(--transition-1);
+      min-height: 70px;
     }
   
   
@@ -22,8 +24,8 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: -80%;
-    left: 75vw;
+    top: -85%;
+    left: 60%;
     width: 10rem;
     transform: rotate(0deg);
   }
